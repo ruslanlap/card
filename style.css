@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow: hidden;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Tinos', serif;
+	max-height: 80vh;
+}
+.container {
+	margin-top: 70px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px;
+}
+.card {
+	position: relative;
+	width: 420px;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 1px solid slategray;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.7em #00000015;
+	transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	border: rgb(250, 250, 250) 0.2em solid;
+}
+
+.card2 {
+	position: relative;
+	width: 420px;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 1px solid slategray;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.7em #00000015;
+	transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	border: rgb(250, 250, 250) 0.2em solid;
+}
+.card3 {
+	position: relative;
+	width: 420px;
+	border-radius: 20px;
+	overflow: hidden;
+	border: solid 1px;
+	border: 1px solid slategray;
+	border-radius: 0.4em;
+	box-shadow: 0.3em 0.3em 0.7em #00000015;
+	transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	border: rgb(250, 250, 250) 0.2em solid;
+}
+.card:hover {
+	border: #006fff 0.2em solid;
+}
+.card2:hover {
+	border: #006fff 0.2em solid;
+}
+.card1:hover {
+	border: #006fff 0.2em solid;
+}
+
+.itemname {
+	font-family: 'Alegreya Sans', serif;
+	font-weight: 700;
+	font-size: 22px;
+	margin-top: 10px;
+	padding: 0px 22px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mouseprice {
+	display: flex;
+	flex-direction: row;
+	gap: 2px;
+	font-family: 'Alegreya Sans', serif;
+	font-weight: 700;
+	font-size: 22px;
+	padding: 0px 22px;
+}
+.atr,
+.total {
+	margin-top: 10px;
+	font-family: 'rubik', serif;
+	font-weight: 400;
+	font-size: 14px;
+
+}
+#sum{
+	margin-top: 5px;
+}
+#sum_board, #sum_screen{
+	margin-top: 5px;
+}
+.total_container {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	flex-direction: row;
+}
+.atr {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.atr-container {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+input {
+	border: none;
+	width: 10px;
+}
+.counter {
+	gap: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	line-height: normal;
+}
+#price, p{
+	color: #646464;
+
+}
+.number, .number2, .number3{
+	width: 12px;
+	text-align: center;
+}
+.counter_elem__minus,
+.counter_elem__plus {
+	cursor: pointer;
+}
+.final_items {
+	display: flex;
+	justify-content: flex-end;
+}
+.final_price {
+	display: flex;
+	justify-content: flex-end;
+}
+#button_decrease,
+#button_increase, 
+#button_trash {
+	align-items: center;
+}
+#button_trash:active {
+	align-items: center;
+	background-color: #8a0000;
+	box-shadow: #646464;
+}
+#button_trash_board:active {
+	align-items: center;
+	background-color: #8a0000;
+	box-shadow: #646464;
+}
+#button_trash_screen:active {
+	align-items: center;
+	background-color: #8a0000;
+	box-shadow: #646464;
+}
+.sum_container ,.sum_container_board, .sum_container_screen {
+	display: flex;
+	flex-direction: row;
+}
+.button1{
+	color: azure;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 0px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button1:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button1 {
+    padding: 10px 30px;
+  }
+}
+.button2{
+	color: azure;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button2:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button2 {
+    padding: 10px 30px;
+  }
+}
+.button3{
+	color: azure;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button3:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button3 {
+    padding: 10px 30px;
+  }
+}

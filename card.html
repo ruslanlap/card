@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&family=Tinos:wght@400;700&display=swap"
+		rel="stylesheet" />
+	<script src="index.js" async></script>
+	<title>Card</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Обери товар</h1>
+		<div class="wrap">
+			<div data-id="01" id="c1" class="card">
+				<img class="img" src="https://brain.com.ua/static/images/prod_img/3/5/U0443335_big.jpg" alt="mouse" srcset="" />
+				<div data="title" class="itemname title">Миша Logitech B100 USB Black ffdfdfd</div>
+				<div class="mouseprice">
+					<p id="price">1000</p>
+					<br />
+					<p>грн.</p>
+				</div>
+				<div class="atr-container">
+					<div class="atr">
+						<div>кількість</div>
+						<div>ціна разом</div>
+					</div>
+					<div class="total">
+						<div class="total_container">
+							<button id="button_decrease">-</button>
+							<div class="number">1</div>
+							<button id="button_increase">+</button>
+							<button id="button_trash">🗑️</button>
+						</div>
+
+						<div class="sum_container">
+							<div id="sum">1000</div>
+							<p>грн.</p>
+						</div>
+					</div>
+				</div>
+				<div id="addtocartfirstsum" class="button1 addtocart">додати в кошик</div>
+			</div>
+			<div data-id="02" id="c2" class="card">
+				<img class="img" src="https://brain.com.ua/static/images/prod_img/7/7/U0433277_2big.jpg" alt="mouse" srcset="" />
+				<div class="itemname title">Клавіатура ERGO KB-905 TKL Youhua Black</div>
+				<div class="mouseprice">
+					<p id="price_board">2000</p>
+					<p>грн.</p>
+				</div>
+				<div class="atr-container">
+					<div class="atr">
+						<div>кількість</div>
+						<div>ціна разом</div>
+					</div>
+					<div class="total">
+						<div class="total_container">
+							<button id="button_decrease_board">-</button>
+							<div class="number2">1</div>
+							<button id="button_increase_board">+</button>
+							<button id="button_trash_board">🗑️</button>
+						</div>
+
+						<div class="sum_container_board">
+							<div id="sum_board">2000</div>
+							<p>грн.</p>
+						</div>
+					</div>
+				</div>
+				<div id="addtocartsecond" class="button2 addtocart">додатив кошик</div>
+			</div>
+						<div data-id="03" id="c3" class="card">
+				<img class="img" src="https://brain.com.ua/static/images/prod_img/4/4/U0477744_2big.jpg" alt="mouse" srcset="" />
+				<div class="itemname title">Монітор 31.5" Samsung Odyssey G5 LC32G55T Black</div>
+				<div class="mouseprice">
+					<p id="price_screen">4999</p>
+					<br />
+					<p>грн.</p>
+				</div>
+				<div class="atr-container">
+					<div class="atr">
+						<div>кількість</div>
+						<div>ціна разом</div>
+					</div>
+					<div class="total">
+						<div class="total_container">
+							<button id="button_decrease_screen">-</button>
+							<div class="number3">1</div>
+							<button id="button_increase_screen">+</button>
+							<button id="button_trash_screen">🗑️</button>
+						</div>
+
+						<div class="sum_container_screen">
+							<div id="sum_screen">4999</div>
+							<p>грн.</p>
+						</div>
+					</div>
+				</div>
+				<div id="addtocart" data-cart class="button3 addtocart">додати в кошик</div>
+			</div>
+	</div>
+	</div>
+	<div class="final_total container">
+		<div id="items" class="final_items">0 шт.</div>
+		<div id="finalprice" class="final_price">0.00 грн.</div>
+	</div>
+</body>
+
+</html>
